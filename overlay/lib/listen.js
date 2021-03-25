@@ -18,12 +18,12 @@ let index60 = 0;
 function initSfx() {
   if (goodRngSfx === undefined) {
     const goodRngSfxConfig = config.get('sfx.good_rng');
-    if (goodRngSfxConfig.data_url !== undefined)
+    if (goodRngSfxConfig.data_url !== null)
       goodRngSfx = new Howl({src: [goodRngSfxConfig.data_url], volume: goodRngSfxConfig.volume, loop: goodRngSfxConfig.loop});
   }
-  if (badRngSfx == undefined) {
+  if (badRngSfx === undefined) {
     const badRngSfxConfig = config.get('sfx.bad_rng');
-    if (badRngSfxConfig.data_url !== undefined)
+    if (badRngSfxConfig.data_url !== null)
       badRngSfx = new Howl({src: [badRngSfxConfig.data_url], volume: badRngSfxConfig.volume, loop: badRngSfxConfig.loop});
   }
 }
