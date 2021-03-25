@@ -26,7 +26,7 @@ const CONFIG_DEFAULT = {
   },
   sfx: {
     good_rng: {
-      data_url: undefined,
+      data_url: null,
       file_name: "Open File",
       volume: 1,
       loop: true,
@@ -35,7 +35,7 @@ const CONFIG_DEFAULT = {
       file_has_changed: false
     },
     bad_rng: {
-      data_url: undefined,
+      data_url: null,
       file_name: "Open File",
       volume: 1,
       loop: true,
