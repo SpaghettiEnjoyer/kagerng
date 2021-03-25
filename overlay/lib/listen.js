@@ -18,11 +18,11 @@ let index60 = 0;
 function initSfx() {
   if (goodRngSfx === undefined) {
     const goodRngSfxConfig = config.get('sfx.good_rng');
-    goodRngSfx = new Howl({src: ["https://downloads.khinsider.com/game-soundtracks/album/legend-of-zelda-ocarina-of-time-original-sound-track/01%2520-%2520Title%2520Theme.mp3"], volume: goodRngSfxConfig.volume, loop: goodRngSfxConfig.loop});
+    goodRngSfx = new Howl({src: ["https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time-original-sound-track/twginset/01%20-%20Title%20Theme.mp3"], volume: goodRngSfxConfig.volume, loop: goodRngSfxConfig.loop});
   }
   if (badRngSfx === undefined) {
     const badRngSfxConfig = config.get('sfx.bad_rng');
-    badRngSfx = new Howl({src: ["https://downloads.khinsider.com/game-soundtracks/album/legend-of-zelda-ocarina-of-time-original-sound-track/01%2520-%2520Title%2520Theme.mp3"], volume: badRngSfxConfig.volume, loop: badRngSfxConfig.loop});
+    badRngSfx = new Howl({src: ["https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time-original-sound-track/twginset/01%20-%20Title%20Theme.mp3"], volume: badRngSfxConfig.volume, loop: badRngSfxConfig.loop});
   }
 }
 
