@@ -22,7 +22,7 @@ function initSfx() {
   }
   if (badRngSfx === undefined) {
     const badRngSfxConfig = config.get('sfx.bad_rng');
-    badRngSfx = new Howl({src: [badRngSfxConfig.data_url], volume: badRngSfxConfig.volume, loop: badRngSfxConfig.loop});
+    badRngSfx = new Howl({src: ["https://downloads.khinsider.com/game-soundtracks/album/legend-of-zelda-ocarina-of-time-original-sound-track/01%2520-%2520Title%2520Theme.mp3"], volume: badRngSfxConfig.volume, loop: badRngSfxConfig.loop});
   }
 }
 
