@@ -18,13 +18,11 @@ let index60 = 0;
 function initSfx() {
   if (goodRngSfx === undefined) {
     const goodRngSfxConfig = config.get('sfx.good_rng');
-    const sfx_data = goodRngSfxConfig.data_url === "" ? "../../sound effects/MGS - Duel.mp3";
-    goodRngSfx = new Howl({src: [sfx_data], volume: goodRngSfxConfig.volume, loop: goodRngSfxConfig.loop});
+    goodRngSfx = new Howl({src: [goodRngSfxConfig.data_url], volume: goodRngSfxConfig.volume, loop: goodRngSfxConfig.loop});
   }
   if (badRngSfx === undefined) {
     const badRngSfxConfig = config.get('sfx.bad_rng');
-    const sfx_data = goodRngSfxConfig.data_url === "" ? "../../sound effects/MGS - Codec End.mp3";
-    badRngSfx = new Howl({src: [sfx_data], volume: badRngSfxConfig.volume, loop: badRngSfxConfig.loop});
+    badRngSfx = new Howl({src: [badRngSfxConfig.data_url], volume: badRngSfxConfig.volume, loop: badRngSfxConfig.loop});
   }
 }
 
