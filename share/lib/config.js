@@ -26,8 +26,8 @@ const CONFIG_DEFAULT = {
   },
   sfx: {
     good_rng: {
-      data_url: "",
-      file_name: "Open File",
+      data_url: "../../sound effects/MGS - Duel.mp3",
+      file_name: "MGS - Duel.mp3",
       volume: 1,
       loop: true,
       should_resume: true,
@@ -35,8 +35,8 @@ const CONFIG_DEFAULT = {
       file_has_changed: false
     },
     bad_rng: {
-      data_url: "",
-      file_name: "Open File",
+      data_url: "../../sound effects/MGS - Codec End.mp3",
+      file_name: "MGS - Codec End.mp3",
       volume: 1,
       loop: true,
       should_resume: true,
