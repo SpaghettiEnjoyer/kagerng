@@ -44,9 +44,7 @@ const CONFIG_DEFAULT = {
       file_has_changed: false
     },
 
-    trigger_on_overall: true,
-    trigger_on_current: false,
-    trigger_on_last60: false
+    trigger: 1 
   },
   style: {
     // body
