@@ -179,11 +179,11 @@
       "resume": "Resume",
       "enabled": "Enabled",
 
-      "crit_dh": "CRIT and DH % of",
-      "triggers": "SFX Trigger",
-      "overall_crit_dh": "Overall",
-      "current_crit_dh": "Current Fight",
-      "last60_crit_dh": "Last 60sec"
+      "crit_dh": "",
+      "triggers": "SFX Trigger Based On:",
+      "overall_crit_dh": "Overall CRIT & DH %",
+      "current_crit_dh": "Current Fight CRIT & DH %",
+      "last60_crit_dh": "Last 60sec CRIT & DH %"
     },
     "style": {
       "_": "Style",
