@@ -38,8 +38,8 @@ const CONFIG_DEFAULT = {
       data_url: "../sound effects/MGS - Codec End.mp3",
       file_name: "MGS - Codec End.mp3",
       volume: 1,
-      loop: true,
-      should_resume: true,
+      loop: false,
+      should_resume: false,
       enabled: true,
       file_has_changed: false
     },
