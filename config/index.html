@@ -441,25 +441,7 @@ document.addEventListener('DOMContentLoaded', _ => {
             <div class="control">
               <label data-locale="config.sfx.triggers"> </label>
               <select id="sfx-trigger"
-                data-config-key="sfx.trigger"
-                onchange="function selectPreset() {
-                          /*
-                          const thisSelect = document.getElementById('sfx-trigger');
-                          switch (thisSelect.selectedIndex) {
-                            case 1:        
-                          }
-                          if (thisSelect.selectedIndex == -1)
-                            return;
-
-                          const presetName = thisSelect.options[thisSelect.selectedIndex].value;
-                          const critPoints = config.get(`stats.presets.${presetName}.crit_points`);
-                          const dhPoints = config.get(`stats.presets.${presetName}.dh_points`);
-                          config.set('stats.presets.selected', {name: presetName, crit_points: critPoints, dh_points: dhPoints});
-
-                          document.getElementById('input-stats-crit-points').value = critPoints;
-                          document.getElementById('input-stats-dh-points').value = dhPoints; 
-                          */
-                };selectPreset()">
+                      data-config-key="sfx.trigger">
                 <option value="1">Overall CRIT & DH %</label></option>
                 <option value="2">Current Fight CRIT & DH %</label></option>
                 <option value="3">Last 60sec CRIT & DH %</label></option>    
