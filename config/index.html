@@ -439,42 +439,31 @@ document.addEventListener('DOMContentLoaded', _ => {
             </div>
             <hr class="solid" id="divisor-of-tables">
             <div class="control">
-              <table id="table-sfx-triggers">
-                <tr>
-                  <td>
-                    <label data-locale="config.sfx.crit_dh"> </label>
-                  </td>
-                  <th>
-                    <label data-locale="config.sfx.overall_crit_dh"> </label>
-                  </th>
-                  <th>
-                    <label data-locale="config.sfx.current_crit_dh"> </label>
-                  </th>
-                  <th>
-                    <label data-locale="config.sfx.last60_crit_dh"> </label>
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    <label data-locale="config.sfx.triggers"> </label>
-                  </td>
-                  <th>
-                    <input type="radio" id="input-sfx-overall-trigger" name="sfx_triggers"
-                          data-type="boolean"
-                          data-config-key="sfx.trigger_on_overall" />
-                  </th>
-                  <th>
-                    <input type="radio" id="input-sfx-current-trigger" name="sfx_triggers"
-                          data-type="boolean"
-                          data-config-key="sfx.trigger_on_current" />
-                  </th>
-                  <th>
-                    <input type="radio" id="input-sfx-last60-trigger" name="sfx_triggers"
-                          data-type="boolean"
-                          data-config-key="sfx.trigger_on_last60" />
-                  </th>
-                </tr>
-              </table>
+              <label data-locale="config.sfx.triggers"> </label>
+              <select id="sfx-trigger"
+                data-config-key="sfx.trigger"
+                onchange="function selectPreset() {
+                          /*
+                          const thisSelect = document.getElementById('sfx-trigger');
+                          switch (thisSelect.selectedIndex) {
+                            case 1:        
+                          }
+                          if (thisSelect.selectedIndex == -1)
+                            return;
+
+                          const presetName = thisSelect.options[thisSelect.selectedIndex].value;
+                          const critPoints = config.get(`stats.presets.${presetName}.crit_points`);
+                          const dhPoints = config.get(`stats.presets.${presetName}.dh_points`);
+                          config.set('stats.presets.selected', {name: presetName, crit_points: critPoints, dh_points: dhPoints});
+
+                          document.getElementById('input-stats-crit-points').value = critPoints;
+                          document.getElementById('input-stats-dh-points').value = dhPoints; 
+                          */
+                };selectPreset()">
+                <option value="1"><label data-locale="config.sfx.overall_crit_dh"></label></option>
+                <option value="2"><label data-locale="config.sfx.current_crit_dh"></label></option>
+                <option value="3"><label data-locale="config.sfx.last60_crit_dh"></label></option>    
+              </select>
             </div>
             <p>
               <label id="testLabel"></label>
