@@ -186,9 +186,9 @@ function rngSoundHandler(playerParseData, swings, critCount, dhCount, critDhCoun
     return;
   }
 
-  const overallTriggerEnabled = config.get('sfx.trigger_on_overall');
-  const currentTriggerEnabled = config.get('sfx.trigger_on_current');
-  const last60TriggerEnabled = config.get('sfx.trigger_on_last60');
+  const overallTriggerEnabled = config.get('sfx.trigger') == 1;
+  const currentTriggerEnabled = config.get('sfx.trigger') == 2;
+  const last60TriggerEnabled = config.get('sfx.trigger') == 3;
 
   const currentCritChance = critCount / swings;
   const currentDhChance = dhCount / swings;
