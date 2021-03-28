@@ -28,7 +28,7 @@ const CONFIG_DEFAULT = {
     good_rng: {
       data_url: "../sound effects/MGS - Duel.mp3",
       file_name: "MGS - Duel.mp3",
-      volume: 1,
+      volume: 0.25,
       loop: true,
       should_resume: true,
       enabled: true,
@@ -37,7 +37,7 @@ const CONFIG_DEFAULT = {
     bad_rng: {
       data_url: "../sound effects/MGS - Codec End.mp3",
       file_name: "MGS - Codec End.mp3",
-      volume: 1,
+      volume: 0.8,
       loop: false,
       should_resume: false,
       enabled: true,
